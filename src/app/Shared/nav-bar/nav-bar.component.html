@@ -1,0 +1,52 @@
+<div class="d-flex gap-4">
+  <div class="search-form w-50">
+    <p-iconField iconPosition="right">
+      <p-inputIcon styleClass="pi pi-search" />
+      <input
+        type="text"
+        pInputText
+        placeholder="Search"
+        class="w-100 search-input"
+      />
+    </p-iconField>
+  </div>
+  <div class="configurations d-flex align-items-center w-25 gap-3">
+    <div
+      class="config-item notfications d-flex justify-content-center align-content-center"
+      pBadge
+      [value]="10"
+    >
+      <i class="pi pi-bell"></i>
+    </div>
+    <div
+      class="config-item notfications d-flex justify-content-center align-content-center"
+      pBadge
+      [value]="10"
+    >
+      <i class="pi pi-inbox"></i>
+    </div>
+    <div
+      class="config-item notfications d-flex justify-content-center align-content-center"
+      pBadge
+      [value]="10"
+    >
+      <i class="pi pi-cog"></i>
+    </div>
+    <div
+      class="config-item notfications d-flex justify-content-center align-content-center"
+      pBadge
+      [value]="10"
+    >
+      <i class="pi pi-gift"></i>
+    </div>
+  </div>
+  <div class="user-avatar w-25 d-flex align-items-center gap-3">
+    <p-avatar
+      image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png"
+      styleClass="mr-2"
+      size="large"
+      shape="circle"
+    />
+    <span class="user-name">Hello, Amira</span>
+  </div>
+</div>
