@@ -1,0 +1,61 @@
+@import "../../../styles.scss";
+::ng-deep {
+  input.p-inputtext.p-component.p-element.search-input {
+    font-family: var(--secondaryFont);
+    border: none;
+  }
+  .p-inputtext:enabled:focus {
+    box-shadow: none;
+  }
+  span[id*="_badge"] {
+    min-width: 20px;
+    max-height: 20px;
+    border-radius: 50%;
+    font-size: 0.6rem;
+    border: 2px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  span#pn_id_3_badge {
+    background-color: #ff5b5b;
+  }
+  span#pn_id_4_badge {
+    background-color: #a367b1;
+  }
+}
+div.config-item {
+  width: 38px;
+  height: 38px;
+  background-color: #2d9bdb49;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  i {
+    color: #2d9bdb;
+    font-size: 1.18rem;
+  }
+  &:nth-of-type(3) {
+    background-color: #ff5b5b6b;
+    i {
+      color: #ff5b5b;
+      font-size: 1.18rem;
+    }
+  }
+  &:nth-of-type(4) {
+    background-color: #a367b157;
+    i {
+      color: #a367b1;
+      font-size: 1.18rem;
+    }
+  }
+}
+div.user-avatar {
+  span.user-name {
+    font-family: var(--secondaryFont);
+    font-weight: bold;
+    color: #464255;
+  }
+}

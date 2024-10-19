@@ -1,0 +1,67 @@
+@import "../../../styles.scss";
+div.logo {
+  p {
+    font-family: var(--mainFont);
+    font-weight: 900;
+    font-size: 1.4rem;
+  }
+}
+span.link-title {
+  font-family: var(--secondaryFont);
+  color: #464255;
+}
+div.link-item {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  padding: 10px 0;
+  border-radius: 8px;
+  i {
+    color: #464255;
+  }
+  &:hover {
+    background: linear-gradient(
+      90deg,
+      rgba(57, 36, 103, 1) 0%,
+      rgba(93, 53, 135, 1) 42%
+    );
+    span.link-title {
+      color: #fff;
+    }
+    svg {
+      path {
+        fill: #fff;
+      }
+    }
+    i {
+      color: #fff;
+    }
+  }
+}
+div.add-menu-container {
+  background-color: #00b074;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  div.add-menu-left-side {
+    span {
+      font-family: var(--secondaryFont);
+      font-size: 0.8rem;
+      color: #ffffff;
+    }
+  }
+}
+::ng-deep p-button.p-element.add-menu-btn {
+  button.p-element.p-button.p-component {
+    background-color: #f2f5f3;
+    border-radius: 5px;
+    margin: 10px 0;
+    border: none;
+    span.p-button-label {
+      font-family: var(--secondaryFont);
+      color: #464255;
+    }
+    span.p-button-icon {
+      color: #464255;
+    }
+  }
+}
