@@ -1,0 +1,341 @@
+<div class="container mt-3">
+  <div class="d-flex w-100 justify-content-between align-items-center">
+    <div class="d-flex flex-column">
+      <span class="dashboard-title">Dashboard</span>
+      <span class="dashboard-subtitle"
+        >Hi, Amira. Welcome back to Tasty Treats Admin!</span
+      >
+    </div>
+    <div class="pick-date d-flex gap-3">
+      <div class="calender-icon">
+        <i class="pi pi-calendar-clock"></i>
+      </div>
+      <div class="d-flex flex-column">
+        <span class="date-title">Pick Date</span>
+        <div class="d-flex flex-column gap-2">
+          <p-calendar
+            inputId="calendar-12h"
+            [(ngModel)]="fromDate"
+            [showTime]="true"
+            [hourFormat]="'12'"
+            placeholder="From ..."
+          />
+          <p-calendar
+            inputId="calendar-12h"
+            [(ngModel)]="toDate"
+            [showTime]="true"
+            [hourFormat]="'12'"
+            placeholder="To ..."
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="statistic-cards d-flex gap-3 mt-4">
+    <div class="statisic-card d-flex gap-3 col p-3 py-4">
+      <div class="icon">
+        <div class="icon-container">
+          <svg
+            width="60"
+            height="44"
+            viewBox="0 0 60 44"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M6.65179 43.2747C9.81867 43.2747 12.4062 40.6627 12.4062 37.466V0.0410156H46.006V37.466C46.006 40.6627 43.4184 43.2747 40.2516 43.2747"
+              fill="#A367B1"
+            />
+            <path
+              d="M34.4972 37.4659V33.0607H0.8974V37.4659C0.8974 40.6626 3.48497 43.2746 6.65185 43.2746H40.2516C37.0847 43.2746 34.4972 40.6626 34.4972 37.4659Z"
+              fill="#392467"
+            />
+            <path
+              d="M22.718 7.48682H18.4311V9.35807H22.718V7.48682Z"
+              fill="white"
+            />
+            <path
+              d="M39.2088 7.48682H26.0393V9.35807H39.2088V7.48682Z"
+              fill="#F7C604"
+            />
+            <path
+              d="M22.718 14.1141H18.4311V15.9854H22.718V14.1141Z"
+              fill="white"
+            />
+            <path
+              d="M39.2088 14.1141H26.0393V15.9854H39.2088V14.1141Z"
+              fill="#F7C604"
+            />
+            <path
+              d="M22.718 20.7417H18.4311V22.6129H22.718V20.7417Z"
+              fill="white"
+            />
+            <path
+              d="M39.2088 20.7417H26.0393V22.6129H39.2088V20.7417Z"
+              fill="#F7C604"
+            />
+            <path
+              d="M22.718 27.369H18.4311V29.2403H22.718V27.369Z"
+              fill="white"
+            />
+            <path
+              d="M39.2088 27.369H26.0393V29.2403H39.2088V27.369Z"
+              fill="#F7C604"
+            />
+            <path
+              opacity="0.1"
+              d="M46.006 27.681V5.42091C45.5426 5.34294 45.0405 5.30396 44.5384 5.30396C38.3978 5.30396 33.4157 10.3329 33.4157 16.5315C33.4157 22.73 38.3978 27.7589 44.5384 27.7589C45.0405 27.7979 45.5426 27.759 46.006 27.681Z"
+              fill="#0C1E5B"
+            />
+            <path
+              d="M48.4398 25.537C54.5828 25.537 59.5626 20.5102 59.5626 14.3094C59.5626 8.10856 54.5828 3.08179 48.4398 3.08179C42.2969 3.08179 37.317 8.10856 37.317 14.3094C37.317 20.5102 42.2969 25.537 48.4398 25.537Z"
+              fill="#FFD1E3"
+            />
+            <path
+              d="M50.4089 15.0889V8.11072H46.4696V15.0889H43.8434L48.4392 20.5077L53.035 15.0889H50.4089Z"
+              fill="#A367B1"
+            />
+          </svg>
+        </div>
+      </div>
+      <div class="details d-flex flex-column">
+        <span class="statistic-number">75</span>
+        <span class="statistic-title">Total Orders</span>
+        <div class="rising d-flex gap-2">
+          <div class="upgrade">
+            <i class="pi pi-arrow-up" style="font-size: 0.5rem"></i>
+          </div>
+          <div class="downgrade" *ngIf="false">
+            <i class="pi pi-arrow-down" style="font-size: 0.5rem"></i>
+          </div>
+          <span class="statistic-percentage">25%</span>
+          <span class="statistic-percentage-title">(30 days)</span>
+        </div>
+      </div>
+    </div>
+    <div class="statisic-card d-flex gap-3 col p-3 py-4">
+      <div class="icon">
+        <div class="icon-container">
+          <svg
+            width="60"
+            height="47"
+            viewBox="0 0 60 47"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M23.9732 0.831177L0.656494 10.4496L23.9732 20.0679L47.2899 10.4496L23.9732 0.831177Z"
+              fill="#5D3587"
+            />
+            <path
+              d="M14.5093 4.75537L10.1207 6.52515L33.4374 16.182L37.7878 14.3737L14.5093 4.75537Z"
+              fill="#F7C604"
+            />
+            <path
+              d="M0.656525 10.4496V36.9578L23.9732 46.5762V20.068L0.656525 10.4496Z"
+              fill="#392467"
+            />
+            <path
+              d="M47.2899 10.4496V36.9578L23.9732 46.5762V20.068L47.2899 10.4496Z"
+              fill="#5D3587"
+            />
+            <path
+              opacity="0.1"
+              d="M47.2899 23.9923C46.603 23.8384 45.9161 23.7615 45.191 23.7615C39.5431 23.7615 34.9637 28.3783 34.9637 34.0724C34.9637 36.727 35.9559 39.1509 37.5968 40.9591L47.2899 36.9579V23.9923Z"
+              fill="#0C1E5B"
+            />
+            <path
+              d="M33.4373 16.182V27.3009L37.7877 25.4926V14.3738L33.4373 16.182Z"
+              fill="#F7C604"
+            />
+            <path
+              d="M49.3506 43.6137C54.999 43.6137 59.5779 38.9974 59.5779 33.3028C59.5779 27.6083 54.999 22.9919 49.3506 22.9919C43.7022 22.9919 39.1233 27.6083 39.1233 33.3028C39.1233 38.9974 43.7022 43.6137 49.3506 43.6137Z"
+              fill="#FFD1E3"
+            />
+            <path
+              d="M48.2823 37.3041C47.977 37.3041 47.7098 37.1887 47.4809 36.9578L44.2371 33.6876C43.7792 33.2259 43.7792 32.4949 44.2371 32.0717C44.6951 31.61 45.4201 31.61 45.8399 32.0717L48.2823 34.534L52.8616 29.9172C53.3196 29.4555 54.0447 29.4555 54.4644 29.9172C54.9224 30.3789 54.9224 31.1099 54.4644 31.5331L49.0836 36.9578C48.8547 37.1887 48.5876 37.3041 48.2823 37.3041Z"
+              fill="#5D3587"
+            />
+            <path
+              d="M8.21244 33.3799L5.69378 28.1475L3.32776 31.2638L4.62525 31.8409V35.2266L6.72414 36.1884V32.7643L8.21244 33.3799Z"
+              fill="#F2F5F3"
+            />
+          </svg>
+        </div>
+      </div>
+      <div class="details d-flex flex-column">
+        <span class="statistic-number">375</span>
+        <span class="statistic-title">Total Delivered</span>
+        <div class="rising d-flex gap-2">
+          <div class="upgrade">
+            <i class="pi pi-arrow-up" style="font-size: 0.5rem"></i>
+          </div>
+          <div class="downgrade" *ngIf="false">
+            <i class="pi pi-arrow-down" style="font-size: 0.5rem"></i>
+          </div>
+          <span class="statistic-percentage">25%</span>
+          <span class="statistic-percentage-title">(30 days)</span>
+        </div>
+      </div>
+    </div>
+    <div class="statisic-card d-flex gap-3 col p-3 py-4">
+      <div class="icon">
+        <div class="icon-container">
+          <svg
+            width="60"
+            height="44"
+            viewBox="0 0 60 44"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M6.65186 43.2747C9.81873 43.2747 12.4063 40.6627 12.4063 37.466V0.0410156H46.0061V37.466C46.0061 40.6627 43.4185 43.2747 40.2516 43.2747"
+              fill="#A367B1"
+            />
+            <path
+              d="M34.4972 37.4659V33.0607H0.89743V37.4659C0.89743 40.6626 3.485 43.2746 6.65188 43.2746H40.2517C37.0848 43.2746 34.4972 40.6626 34.4972 37.4659Z"
+              fill="#392467"
+            />
+            <path
+              d="M22.718 7.48682H18.4312V9.35807H22.718V7.48682Z"
+              fill="#F7C604"
+            />
+            <path
+              d="M39.2088 7.48682H26.0393V9.35807H39.2088V7.48682Z"
+              fill="#F3F2F7"
+            />
+            <path
+              d="M22.718 14.1141H18.4312V15.9854H22.718V14.1141Z"
+              fill="#F7C604"
+            />
+            <path
+              d="M39.2088 14.1141H26.0393V15.9854H39.2088V14.1141Z"
+              fill="#F3F2F7"
+            />
+            <path
+              d="M22.718 20.7417H18.4312V22.6129H22.718V20.7417Z"
+              fill="#F7C604"
+            />
+            <path
+              d="M39.2088 20.7417H26.0393V22.6129H39.2088V20.7417Z"
+              fill="#F3F2F7"
+            />
+            <path
+              d="M22.718 27.369H18.4312V29.2403H22.718V27.369Z"
+              fill="#F7C604"
+            />
+            <path
+              d="M39.2088 27.369H26.0393V29.2403H39.2088V27.369Z"
+              fill="#F3F2F7"
+            />
+            <path
+              opacity="0.1"
+              d="M46.0061 27.681V5.42091C45.5427 5.34294 45.0406 5.30396 44.5385 5.30396C38.3979 5.30396 33.4159 10.3329 33.4159 16.5315C33.4159 22.73 38.3979 27.7589 44.5385 27.7589C45.0406 27.7979 45.5427 27.759 46.0061 27.681Z"
+              fill="#0C1E5B"
+            />
+            <path
+              d="M48.4399 25.537C54.5828 25.537 59.5627 20.5102 59.5627 14.3094C59.5627 8.10856 54.5828 3.08179 48.4399 3.08179C42.2969 3.08179 37.3171 8.10856 37.3171 14.3094C37.3171 20.5102 42.2969 25.537 48.4399 25.537Z"
+              fill="#FFD1E3"
+            />
+            <path
+              d="M52.8063 9.73083L43.7267 18.8847M43.7267 9.73083L52.8063 18.8847"
+              stroke="white"
+              stroke-width="4"
+            />
+            <path
+              d="M52.8063 9.73083L43.7267 18.8847M43.7267 9.73083L52.8063 18.8847"
+              stroke="#5D3587"
+              stroke-width="4"
+            />
+          </svg>
+        </div>
+      </div>
+      <div class="details d-flex flex-column">
+        <span class="statistic-number">20</span>
+        <span class="statistic-title">Total Canceled</span>
+        <div class="rising d-flex gap-2">
+          <div class="upgrade" *ngIf="false">
+            <i class="pi pi-arrow-up" style="font-size: 0.5rem"></i>
+          </div>
+          <div class="downgrade">
+            <i class="pi pi-arrow-down" style="font-size: 0.5rem"></i>
+          </div>
+          <span class="statistic-percentage">25%</span>
+          <span class="statistic-percentage-title">(30 days)</span>
+        </div>
+      </div>
+    </div>
+    <div class="statisic-card d-flex gap-3 col p-3 py-4">
+      <div class="icon">
+        <div class="icon-container">
+          <svg
+            width="60"
+            height="54"
+            viewBox="0 0 60 54"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M29.7136 11.9521C29.1199 11.9521 28.6534 11.4818 28.6534 10.8832V8.18958C28.6534 5.28219 26.3209 2.93063 23.4795 2.93063C22.08 2.93063 20.8077 3.48645 19.7899 4.46983C18.7721 5.45322 18.2632 6.77864 18.2632 8.18958V10.8832C18.2632 11.4818 17.7967 11.9521 17.2029 11.9521C16.6092 11.9521 16.1427 11.4818 16.1427 10.8832V8.18958C16.1427 6.22282 16.9061 4.38432 18.2632 2.97339C19.6626 1.56245 21.4862 0.792847 23.437 0.792847C27.4659 0.792847 30.7314 4.08503 30.7314 8.14682V10.8404C30.7738 11.4818 30.3073 11.9521 29.7136 11.9521Z"
+              fill="#FFD497"
+            />
+            <path
+              d="M46.3802 47.9952H15.464L10.3325 8.0614H44.2173L46.3802 47.9952Z"
+              fill="#A367B1"
+            />
+            <path
+              d="M15.4639 47.9952L8.12716 46.7125L0.747986 47.9952L2.95326 8.0614H13.2586L15.4639 47.9952Z"
+              fill="#392467"
+            />
+            <path
+              d="M28.9076 21.8287C24.8787 21.8287 21.6132 18.5365 21.6132 14.4747V11.7811C21.6132 11.1825 22.0797 10.7122 22.6734 10.7122C23.2672 10.7122 23.7337 11.1825 23.7337 11.7811V14.4747C23.7337 17.3821 26.0662 19.6909 28.9076 19.6909C31.749 19.6909 34.1239 17.3393 34.1239 14.4319V11.7383C34.1239 11.1397 34.5904 10.6694 35.1841 10.6694C35.7778 10.6694 36.2443 11.1397 36.2443 11.7383V14.4319C36.2443 18.5365 32.9788 21.8287 28.9076 21.8287Z"
+              fill="white"
+            />
+            <path
+              opacity="0.1"
+              d="M30.8162 42.5224C30.8162 44.4891 31.3251 46.3704 32.2157 47.9951H46.4227L45.5322 31.5769C44.4719 31.2349 43.3693 31.0638 42.2242 31.0638C35.9053 31.0638 30.8162 36.1945 30.8162 42.5224Z"
+              fill="#0C1E5B"
+            />
+            <path
+              d="M48.119 53.9809C54.396 53.9809 59.4846 48.8507 59.4846 42.5224C59.4846 36.194 54.396 31.0638 48.119 31.0638C41.8419 31.0638 36.7534 36.194 36.7534 42.5224C36.7534 48.8507 41.8419 53.9809 48.119 53.9809Z"
+              fill="#FFD1E3"
+            />
+            <path
+              d="M46.9314 46.9691C46.5922 46.9691 46.2953 46.8409 46.0408 46.5843L42.4361 42.9501C41.9272 42.437 41.9272 41.6247 42.4361 41.1544C42.945 40.6413 43.7507 40.6413 44.2172 41.1544L46.9314 43.8907L52.0205 38.76C52.5294 38.247 53.3352 38.247 53.8017 38.76C54.3106 39.2731 54.3106 40.0855 53.8017 40.5558L47.822 46.5843C47.5676 46.8409 47.2283 46.9691 46.9314 46.9691Z"
+              fill="#A367B1"
+            />
+          </svg>
+        </div>
+      </div>
+      <div class="details d-flex flex-column">
+        <span class="statistic-number">$540</span>
+        <span class="statistic-title">Total Revenue</span>
+        <div class="rising d-flex gap-2">
+          <div class="upgrade" *ngIf="false">
+            <i class="pi pi-arrow-up" style="font-size: 0.5rem"></i>
+          </div>
+          <div class="downgrade">
+            <i class="pi pi-arrow-down" style="font-size: 0.5rem"></i>
+          </div>
+          <span class="statistic-percentage">25%</span>
+          <span class="statistic-percentage-title">(30 days)</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="charts-part-one d-flex mt-3 gap-3">
+    <div class="chart-one bg-white p-4 col-6">
+      <span class="chart-title">Rate Of Consumption</span>
+      <p-chart type="doughnut" [data]="data" [options]="options" width="100" />
+    </div>
+    <div class="chart-one bg-white p-4 col-6">
+      <div class="d-flex justify-content-between align-items-center">
+        <span class="chart-title">Rate Of Consumption</span>
+        <button class="export-btn">
+          <i class="pi pi-download"></i> Save Report
+        </button>
+      </div>
+      <p-chart type="line" [data]="data" [options]="options" height="300px" />
+    </div>
+  </div>
+</div>

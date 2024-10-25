@@ -1,0 +1,29 @@
+<div class="card">
+  <div class="card-image">
+    <img class="card-img" [src]="itemImageSrc" loading="lazy" />
+  </div>
+  <div
+    class="card-details d-flex flex-column p-2 justify-content-center align-items-center"
+  >
+    <span class="card-title m-0">{{ itemName }}</span>
+    <span class="card-category">Foods/{{ itemCategory }}</span>
+    <span class="card-price">{{ itemPrice }}</span>
+  </div>
+  <div
+    class="action-buttons d-flex gap-3 p-2 justify-content-center align-items-center"
+  >
+    <button>
+      <i class="pi pi-eye"></i>
+    </button>
+    <button class="disable-button">
+      <i class="pi pi-eye-slash"></i>
+    </button>
+    <button>
+      <i class="pi pi-pen-to-square"></i>
+    </button>
+    <button>
+      <i class="pi pi-info"></i>
+    </button>
+  </div>
+  <div class="card-status">{{ itemStatus }}</div>
+</div>
