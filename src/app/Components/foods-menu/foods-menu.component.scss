@@ -1,0 +1,147 @@
+@import "../../../styles.scss";
+@import "../../Shared/nav-bar/nav-bar.component.scss";
+@import "../dashboard/dashboard.component.scss";
+@import "../../Shared/item-card/item-card.component.scss";
+
+button.add-btn {
+  background: none;
+  border: 1px solid #5d3587;
+  border-radius: 20px;
+  height: 38px;
+  font-family: var(--secondaryFont);
+  font-weight: bold;
+  color: #5d3587;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    background-color: #5d3587;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+}
+
+div.filter-view {
+  span,
+  label {
+    font-family: var(--secondaryFont);
+    font-size: 1.1rem;
+  }
+}
+::ng-deep p-radiobutton.choose-view-radio {
+  div.p-radiobutton .p-radiobutton-box.p-highlight {
+    background-color: #5d3587;
+    border-color: #5d3587;
+    &:hover {
+      border-color: #5d3587;
+    }
+  }
+}
+::ng-deep .p-radiobutton .p-radiobutton-box:not(.p-disabled).p-focus {
+  box-shadow: none;
+}
+::ng-deep
+  .p-radiobutton
+  .p-radiobutton-box:not(.p-disabled):not(.p-highlight):hover {
+  border-color: #5d3587;
+}
+div.available-item {
+  background-color: #caf1d8;
+  color: #40a164;
+  display: flex;
+  font-family: var(--secondaryFont);
+  font-weight: bold;
+  justify-content: center;
+  padding: 5px;
+  border-radius: 10px;
+}
+div.unavailable-item {
+  background-color: #feddc7;
+  color: #ae510f;
+  display: flex;
+  font-family: var(--secondaryFont);
+  font-weight: bold;
+  justify-content: center;
+  padding: 5px;
+  border-radius: 10px;
+}
+::ng-deep tr {
+  th {
+    font-family: var(--secondaryFont);
+    font-weight: bold;
+    padding: 10px 20px;
+  }
+  td {
+    font-family: var(--secondaryFont);
+    padding: 0px 20px;
+  }
+  border-bottom: 1px solid #5d35874f;
+}
+::ng-deep {
+  span.p-dialog-title {
+    font-family: var(--secondaryFont);
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  span.p-text-secondary {
+    font-family: var(--secondaryFont);
+  }
+}
+::ng-deep {
+  span.p-element.p-button.p-component.p-fileupload-choose {
+    height: 39.4px;
+    background-color: black;
+    border-radius: 3px;
+    border: none;
+  }
+  textarea.p-inputtextarea.p-inputtext.p-component.p-element {
+    height: 67.98px;
+    // width: 80%;
+  }
+}
+::ng-deep {
+  span.p-element.p-button.p-component.p-fileupload-choose {
+    span.p-button-label {
+      color: white;
+    }
+  }
+  p-button.p-element[ng-reflect-label="Upload"] {
+    display: none;
+  }
+  p-button.p-element[ng-reflect-label="Cancel"] {
+    button {
+      height: 39.4px;
+      background-color: #5d3587;
+      border-radius: 3px;
+      border: none;
+      span.p-button-label {
+        color: white;
+      }
+    }
+  }
+
+  button.p-element.p-button-icon-only.p-button.p-component {
+    background-color: #5d3587;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+  }
+  div.p-fileupload-content {
+    padding: 0;
+  }
+  .file-upload-title {
+    font-family: var(--secondaryFont);
+    font-size: 14px;
+  }
+  .file-upload-subtitle {
+    font-family: var(--secondaryFont);
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.452);
+  }
+}
+label{
+  font-family: var(--secondaryFont);
+}

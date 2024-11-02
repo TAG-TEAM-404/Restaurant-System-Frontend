@@ -1,0 +1,59 @@
+::ng-deep {
+  .p-breadcrumb.p-component {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+
+    ol {
+      padding: 0;
+      margin: 0;
+    }
+    a {
+      text-decoration: none;
+      span {
+        font-family: Barlow;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 21.6px;
+      }
+    }
+  }
+  .cancel-order-btn {
+    .p-button {
+      border-radius: 9px;
+      height: 40px;
+      color: #ff5b5b;
+      border-color: #ff5b5b;
+    }
+  }
+
+  .order-status-btn {
+    .p-button {
+      height: 45px;
+      padding-inline: 12px;
+      background-color: #5d3587;
+      border-color: #5d3587;
+    }
+    .p-splitbutton-defaultbutton {
+      border-radius: 8px 0px 0px 8px;
+    }
+    .p-splitbutton-menubutton {
+      border-radius: 0px 8px 8px 0px;
+    }
+  }
+}
+
+p.title {
+  font-family: var(--secondaryFont);
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 38.4px;
+  margin: 0;
+}
+.active-breadcrumb-color {
+  color: #a3a3a3;
+}
+.inactive-breadcrumb-color {
+  color: #5d3587;
+}

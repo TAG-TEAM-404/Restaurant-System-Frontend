@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { ButtonModule } from 'primeng/button';
 
 @Component({
@@ -9,4 +10,9 @@ import { ButtonModule } from 'primeng/button';
   templateUrl: './side-bar.component.html',
   styleUrl: './side-bar.component.scss',
 })
-export class SideBarComponent {}
+export class SideBarComponent {
+  constructor(private readonly router: Router) {}
+  navigateTo(path: string): void {
+    this.router.navigate([path]);
+  }
+}

@@ -1,0 +1,12 @@
+<div class="d-flex gap-4 flex-wrap">
+  <ng-container *ngFor="let item of items">
+    <app-item-card
+      [itemName]="item.name"
+      [itemImageSrc]="item.imageSrc"
+      [itemCategory]="item.category"
+      [itemPrice]="'$' + item.price"
+      [itemStatus]="item.status"
+      [itemQuantity]="item.quantity"
+    ></app-item-card>
+  </ng-container>
+</div>

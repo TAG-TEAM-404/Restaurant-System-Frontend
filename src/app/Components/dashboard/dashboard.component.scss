@@ -1,0 +1,133 @@
+@import "../../../styles.scss";
+span.dashboard-title {
+  font-family: var(--secondaryFont);
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+span.dashboard-subtitle {
+  font-family: var(--secondaryFont);
+  font-size: 0.8rem;
+  color: rgba(0, 0, 0, 0.342);
+}
+div.pick-date {
+  background-color: white;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  padding: 13px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  div.calender-icon {
+    background-color: #5d358756;
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    i {
+      color: #5d3587;
+      font-size: 1.7rem;
+    }
+  }
+  div {
+    span.date-title {
+      font-family: var(--secondaryFont);
+      font-size: 1rem;
+      font-weight: bold;
+    }
+  }
+}
+::ng-deep span.p-calendar {
+  input.p-element.p-inputtext.p-component {
+    width: 100%;
+    font-size: 0.8rem;
+    font-family: var(--secondaryFont);
+    color: rgba(0, 0, 0, 0.384);
+    padding: 5px;
+  }
+}
+div.statisic-card {
+  background-color: white;
+  border-radius: 14px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  div.icon {
+    div.icon-container {
+      background-color: #eeeeee83;
+      width: 85px;
+      height: 85px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  div.details {
+    span.statistic-number {
+      font-family: var(--secondaryFont);
+      font-weight: 900;
+      font-size: 2rem;
+    }
+    span.statistic-title {
+      font-family: var(--secondaryFont);
+      font-size: 1rem;
+      color: #464255;
+    }
+    div.rising {
+      div.upgrade {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #00b07542;
+        i {
+          color: #00b075;
+        }
+      }
+      div.downgrade {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ff5b5b38;
+        i {
+          color: #ff5b5b;
+        }
+      }
+      span.statistic-percentage,
+      span.statistic-percentage-title {
+        font-family: var(--secondaryFont);
+        font-size: 0.9rem;
+        color: #0000005e;
+      }
+    }
+  }
+}
+div.chart-one {
+  span.chart-title {
+    font-family: var(--secondaryFont);
+    font-weight: 900;
+    font-size: 1.2rem;
+  }
+  border-radius: 14px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+button.export-btn{
+  min-width: 140px;
+  background: none;
+  font-family: var(--secondaryFont);
+  color: #5d3587;
+  border: 1px solid #5d3587;
+  border-radius: 10px;
+  padding: 5px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  transition: all 0.3s ease-in-out;
+  &:hover{
+    background-color: #5d3587;
+    color: white;
+  }
+}
