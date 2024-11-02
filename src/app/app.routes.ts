@@ -7,4 +7,11 @@ export const routes: Route[] = [
     loadChildren: () =>
       import('./Components/home-screen/home.routes').then((m) => m.HomeRoutes),
   },
+  {
+    path: 'order',
+    loadChildren: () =>
+      import('./Components/order/order.routes').then(
+        (m) => m.OrderDetailsRoutes
+      ),
+  },
 ];

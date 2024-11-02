@@ -1,0 +1,77 @@
+<div class="container mt-3">
+  <div class="row">
+    <div class="col">
+      <div class="d-flex flex-column">
+        <p class="title">Order ID #<span class="order-id">248563</span></p>
+        <p-breadcrumb class="max-w-full" [model]="breadcrumbItems">
+          <ng-template pTemplate="item" let-item>
+            <ng-container *ngIf="item.route; else elseBlock">
+              <a [routerLink]="item.route" class="p-menuitem-link">
+                <span class="inactive-breadcrumb-color">{{ item.label }}</span>
+              </a>
+            </ng-container>
+            <ng-template #elseBlock>
+              <a [href]="item.url">
+                <span class="active-breadcrumb-color">{{ item.label }}</span>
+              </a>
+            </ng-template>
+          </ng-template>
+          <ng-template pTemplate="separator"> / </ng-template>
+        </p-breadcrumb>
+      </div>
+    </div>
+    <div class="col">
+      <div class="d-flex justify-content-end gap-3">
+        <p-button
+          class="order-btn cancel-order-btn"
+          label="Cancel Order"
+          [outlined]="true"
+        />
+        <p-splitButton
+          class="order-btn order-status-btn"
+          label="On Delivery"
+          [model]="specialBtnItems"
+          size="large"
+        >
+          <ng-template pTemplate="content">
+            <span class="flex align-items-start font-bold">
+              <img
+                alt="logo"
+                src="../../../../assets/Images/truck.png"
+                style="height: 1.7rem; margin-right: 0.5rem"
+              />
+              <span>On Delivery</span>
+            </span>
+          </ng-template></p-splitButton
+        >
+      </div>
+    </div>
+  </div>
+  <div class="row mt-5 d-flex justify-content-between">
+    <div class="col col-3">
+      <div class="user-info d-flex flex-column align-items-center">
+        <img
+          src="../../../../assets/Images/user-img.png"
+          alt=""
+          class="user-img"
+        />
+        <p class="user-name">Wahyu Adi Kurniawan</p>
+        <p-chip
+          label="Customer"
+          class="user-type"
+          [style]="{
+            backgroundColor: '#5d358726',
+            color: '#5d3587',
+            borderRadius: '8px',
+            fontSize: '14px',
+            fontWeight: '600'
+          }"
+        />
+      </div>
+    </div>
+    <div class="col col-8">
+      <div class="user-info bg-success">hi</div>
+    </div>
+  </div>
+  <div class="row"></div>
+</div>

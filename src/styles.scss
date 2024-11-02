@@ -24,3 +24,9 @@
   --text-200: #8a8a8a;
   --text-100: #e6e6e6;
 }
+
+::ng-deep {
+  .p-button:focus {
+    box-shadow: none !important;
+  }
+}
