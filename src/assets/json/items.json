@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "Pizza StuffCrust",
+    "category": "Pizza",
+    "price": 10,
+    "status": "available",
+    "imageSrc": "assets/Images/pizza.png",
+    "hasOffer": false,
+    "quantity": 400
+  },
+  {
+    "id": 2,
+    "name": "Pizza Runch",
+    "category": "Pizza",
+    "price": 10,
+    "status": "available",
+    "imageSrc": "assets/Images/pizza.png",
+    "hasOffer": false,
+    "quantity": 500
+  },
+  {
+    "id": 3,
+    "name": "Pizza StuffCrust",
+    "category": "Pizza",
+    "price": 10,
+    "status": "available",
+    "imageSrc": "assets/Images/pizza.png",
+    "hasOffer": false,
+    "quantity": 200
+  },
+  {
+    "id": 4,
+    "name": "Pizza StuffCrust",
+    "category": "Pizza",
+    "price": 10,
+    "status": "available",
+    "imageSrc": "assets/Images/pizza.png",
+    "hasOffer": false,
+    "quantity": 100
+  },
+  {
+    "id": 5,
+    "name": "Pizza StuffCrust",
+    "category": "Pizza",
+    "price": 20,
+    "status": "available",
+    "imageSrc": "assets/Images/pizza.png",
+    "hasOffer": false,
+    "quantity": 600
+  },
+  {
+    "id": 6,
+    "name": "Pizza StuffCrust",
+    "category": "Pizza",
+    "price": 10,
+    "status": "expired",
+    "imageSrc": "assets/Images/pizza.png",
+    "hasOffer": false,
+    "quantity": 300
+  },
+  {
+    "id": 7,
+    "name": "Pizza StuffCrust",
+    "category": "Pizza",
+    "price": 20,
+    "status": "available",
+    "imageSrc": "assets/Images/pizza.png",
+    "hasOffer": false,
+    "quantity": 300
+  },
+  {
+    "id": 8,
+    "name": "Pizza StuffCrust",
+    "category": "Pizza",
+    "price": 10,
+    "status": "available",
+    "imageSrc": "assets/Images/pizza.png",
+    "hasOffer": false,
+    "quantity": 500
+  }
+]

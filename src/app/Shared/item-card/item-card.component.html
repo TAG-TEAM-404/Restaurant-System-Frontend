@@ -1,4 +1,4 @@
-<div class="card">
+<div class="card position-relative">
   <div class="card-image">
     <img class="card-img" [src]="itemImageSrc" loading="lazy" />
   </div>
@@ -25,5 +25,14 @@
       <i class="pi pi-info"></i>
     </button>
   </div>
-  <div class="card-status">{{ itemStatus }}</div>
+  <div
+    class="card-status"
+    [ngClass]="{
+      'card-status': true,
+      'available-item': itemStatus === 'available',
+      'unavailable-item': itemStatus === 'expired'
+    }"
+  >
+    {{ itemStatus }}
+  </div>
 </div>
